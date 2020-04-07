@@ -1,0 +1,29 @@
+@font-face
+{
+  font-family: "ThankYouKobe";
+  src: url("fonts/thank_you_kobe.ttf");
+}
+
+@font-face
+{
+  font-family: "PhotographSignature";
+  src: url("fonts/photograph_signature.ttf");
+}
+
+@font-face
+{
+  font-family: "JackInput";
+  src: url("fonts/jack_input.ttf");
+}
+
+@font-face
+{
+  font-family: "Timeless";
+  src: url("fonts/timeless.ttf");
+}
+
+@font-face
+{
+  font-family: "TimelessBold";
+  src: url("fonts/timeless_bold.ttf");
+}
