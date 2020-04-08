@@ -1,212 +1,277 @@
 :root
 {
-  --color-banner: #e3e4e6;
+	--color-banner: #e3e4e6;
+	--palette-lal-white: #ffffff;
+	--palette-lal-yellow: #fdb827;
+	--palette-lal-purple: #542583;
+	--palette-lal-black: #000000;
+	--palette-lal-gray: #aaaaaa;
 
-  --color-bg-navbar: #333;
-  --color-a: #f2f2f2;
-  --color-a-hover: #ddd;
-  --color-a-active: white;
-  --color-a-bg-hover: black;
-  --color-a-bg-active: #4caf50;
+	--color-bg-navbar: #333;
+	--color-a: #f2f2f2;
+	--color-a-hover: #ddd;
+	--color-a-active: white;
+	--color-a-bg-hover: black;
+	--color-a-bg-active: #4caf50;
 }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--palette-lal-gray); }
+::-webkit-scrollbar-thumb { background: var(--palette-lal-purple); }
+::-webkit-scrollbar-thumb:hover { background: var(--palette-lal-yellow); }
 
 *
 {
-  margin: 0;
-  padding: 0;
-}
-
-::-webkit-scrollbar
-{
-  width: 8px;
-}
-
-::-webkit-scrollbar-track
-{
-  background: #5c5470;
-}
-
-::-webkit-scrollbar-thumb
-{
-  background: #352f44;
-}
-
-::-webkit-scrollbar-thumb:hover
-{
-  background: #2a2438;
+	margin: 0;
+	padding: 0;
 }
 
 body, html
 {
-  height: 100%;
-  background-color: #2a2438;
+	height: 100%;
+	background-color: #2a2438;
 }
 
-body
-{
-  overflow-x: hidden;
-}
+body { overflow-x: hidden; }
 
 #banner_image
 {
-  height: 100%;
-  background-image: url("assets/art12.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin: auto; 
+	height: 100%;
+	background-image: url("assets/art12.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin: auto; 
 }
 
 #banner_text
 {
-  color: var(--color-banner);
-  opacity: 60%;
+	color: var(--palette-lal-yellow);
+	text-shadow: 8px 8px 16px var(--palette-lal-purple);
+	opacity: 60%;
 }
 
 #banner_text h1
 {
-  font-family: "ThankYouKobe";
-  font-size: 96px;
-  font-weight: normal;
-  text-align: left;
+	font-family: "ThankYouKobe";
+	/*font-size: 96px;*/
+	font-size: 8vw;
+	font-weight: normal;
+	text-align: left;
 }
 
 #banner_text h4
 {
-  font-family: "PhotographSignature";
-  font-size: 48px;
-  font-weight: normal;
-  text-align: center;
+	font-family: "PhotographSignature";
+	/*font-size: 48px;*/
+	font-size: 4vw;
+	font-weight: normal;
+	text-align: center;
 }
 
 #banner_text hr
 {
-  border: 2px solid var(--color-banner);
-  border-radius: 2px; 
-  opacity: 50%;
+	/*border: 2px solid var(--color-banner);*/
+	border: 0.1vw solid var(--color-banner);
+	border-radius: 0.1vw;
+	opacity: 50%;
 }
 
 #banner_image .caption
 {
-  font-family: "JackInput";
-  font-weight: normal;
-  color: var(--color-banner);
-  opacity: 60%;
-  font-size: 16px;
-  padding: 8px;
-  position: absolute;
-  bottom: 2px;
-  width: 100%;
-  text-align: center
+	font-family: "JackInput";
+	font-weight: normal;
+	color: var(--color-banner);
+	opacity: 60%;
+	font-size: 16px;
+	padding: 8px;
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center
 }
 
 .navbar
 {
-  position: relative;
-  background-color: var(--color-bg-navbar);
-  overflow: hidden;
+	position: relative;
+	background-color: var(--color-bg-navbar);
+	overflow: hidden;
 }
 
 .navbar a
 {
-  float: left;
-  color: var(--color-a);
-  padding: 7px 8px;
-  text-align: center;
-  text-decoration: none;
-  font-family: "TimelessBold";
-  font-size: 24px;
-  margin-top: 8px;
-  margin-bottom: 8px;
+	float: left;
+	color: var(--color-a);
+	padding: 7px 8px;
+	text-align: center;
+	text-decoration: none;
+	font-family: "TimelessBold";
+	font-size: 24px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .navbar a:hover
 {
-  background-color: var(--color-a-bg-hover)
-  color: var(--color-a-hover);
+	background-color: var(--color-a-bg-hover)
+	color: var(--color-a-hover);
 }
 
 .navbar a.active
 {
-  background-color: var(--color-a-bg-active);
-  color: var(--color-a-active);
+	background-color: var(--color-a-bg-active);
+	color: var(--color-a-active);
 }
 
 .navbar-centered a
 {
-  float: none;
-  position: absolute;
-  left: 50%;
-  transition: translate(-50%, -50%);
+	float: none;
+	position: absolute;
+	left: 50%;
+	transition: translate(-50%, -50%);
 }
 
 .navbar-right
 {
-  float: right;
+	float: right;
 }
 
 .content
 {
-  padding: 16px;
+	padding: 16px;
 }
 
 .sticky
 {
-  position: fixed;
-  top: 0;
-  width: 100%;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .sticky + .content
 {
-  padding-top: 60px;
+	padding-top: 60px;
 }
 
 @media screen and (max-width: 600px)
 {
-  .navbar a, .navbar-right
-  {
-    float: none;
-    display: block;
-  }
-  .navbar-centered a
-  {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    transform: none;
-  }
+	.navbar a, .navbar-right
+	{
+		float: none;
+		display: block;
+	}
+	.navbar-centered a
+	{
+		position: relative;
+		top: 0;
+		bottom: 0;
+		transform: none;
+	}
 }
 
 .margined-left
 {
-  margin-left: 48px;
+	margin-left: 48px;
 }
 
 .h-left
 {
-  position: absolute;
-  left: 0%;
-  transform: translateX(-50%);
+	position: absolute;
+	left: 0%;
+	transform: translateX(-50%);
 }
 
 .v-center
 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.banner
+{
+	position: relative;
+	margin: 32px auto;
+	width: 95%;
+	z-index: -1;
+	background-color: var(--palette-lal-gray);
+	box-shadow: 8px 8px 16px var(--palette-lal-black);
+	display: flex;
+}
+
+.banner-text
+{
+	width: 100%;
+	margin: 16px;
+	padding: 16px;
+	background-color: var(--palette-lal-white);
+	box-shadow: 8px 8px 16px var(--palette-lal-black);
 }
 
 .banner-left
 {
+	padding: 16px;
 }
 
 .banner-left img
 {
-  height: auto;
-  width: 25%;
-  margin-left: 48px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-shadow: -8px 8px 16px var(--palette-lal-black);
+}
+
+.banner-right
+{
+	padding: 16px;
+}
+
+.banner-right img
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	box-shadow: -8px 8px 16px var(--palette-lal-black);
+}
+
+.container
+{
+	position: relative;
+	width: 256px;
+	height: auto;
+}
+
+.overlay
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: var(--palette-lal-black);
+}
+
+.container:hover .overlay
+{
+	opacity: 75%;
+}
+
+.overlay-text
+{
+	color: var(--palette-lal-yellow);
+	text-shadow: 4px 4px 2px var(--palette-lal-purple);
+	font-family: "ThankYouKobe";
+	font-size: 48px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
