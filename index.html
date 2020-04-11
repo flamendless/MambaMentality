@@ -11,6 +11,7 @@
 
 	<script src="navbar.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </head>
 
 <body>
@@ -48,35 +49,91 @@
 		</div>
 	</div>
 
-	<div class="content">
-		
-	</div>
-
-	<div class="banner">
-		<div class="banner-left">
-			<div class="container">
-				<img id="img_jumpshot" src="assets/jumpshot.png" alt="Kobe on a jumpshot">
-				<div class="overlay">
-					<div class="overlay-text">
-						Kobe on his jumper shot
+	<div id="main">
+		<div id="mosaic">
+			<div class="mosaic-tile flip">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img id="img_jumpshot" src="assets/jumpshot.png" alt="Kobe on a jumpshot">
+					</div>
+					<div class="flip-back">
+						<img id="img_jumpshot_hovered" src="assets/jumpshot_hovered.png" alt="Kobe on a jumpshot">
+						<div class="container-overlay">
+							<div class="overlay">
+								<div class="overlay-text">
+									Kobe on his jumper shot
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="banner-text">
-			test
-		</div>
-	</div>
 
-	<div class="banner">
-		<div class="banner-text">
-		</div>
-		<div class="banner-right">
-			<div class="container">
-				<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
-				<div class="overlay">
-					<div class="overlay-text">
-						Kobe on lockdown defense
+			<div class="mosaic-tile flip">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
+					</div>
+					<div class="flip-back">
+						<img id="img_defense_hovered" src="assets/defense_hovered.png" alt="Kobe on defense">
+						<div class="container-overlay">
+							<div class="overlay">
+								<div class="overlay-text">
+									Kobe on his defense
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mosaic-tile flip">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img id="img_jumpshot" src="assets/jumpshot.png" alt="Kobe on a jumpshot">
+					</div>
+					<div class="flip-back">
+						<div class="container-overlay">
+							<div class="overlay">
+								<div class="overlay-text">
+									Kobe on his jumper shot
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mosaic-tile flip">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
+					</div>
+					<div class="flip-back">
+						<div class="container-overlay">
+							<div class="overlay">
+								<div class="overlay-text">
+									Kobe on his defense
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mosaic-tile flip">
+				<div class="flip-inner">
+					<div class="flip-front">
+						<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
+					</div>
+					<div class="flip-back">
+						<div class="container-overlay">
+							<div class="overlay">
+								<div class="overlay-text">
+									Kobe on his defense
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
