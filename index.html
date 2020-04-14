@@ -61,12 +61,16 @@
 	<div id="main" class="content">
 
 		<div class="actions">
-			<button id="minimize" class="icon-button">
-				<i class="fa fa-compress-arrows-alt"></i>
-			</button>
-			<button id="maximize" class="icon-button">
-				<i class="fa fa-expand"></i>
-			</button>
+			<div class="actions-container">
+				<button id="minimize" class="icon-button tooltip">
+					<i class="fa fa-compress-arrows-alt"></i>
+					<span class="tooltip-text">Minimize Mosaic</span>
+				</button>
+				<button id="maximize" class="icon-button tooltip">
+					<i class="fa fa-expand"></i>
+					<span class="tooltip-text">Maximize Mosaic</span>
+				</button>
+			</div>
 		</div>
 		<br>
 
@@ -93,6 +97,18 @@
 			</div>
 			-->
 		</div>
+
+		<!-- Modal (activated in index.js) -->
+		<div id="mosaic_modal" class="modal">
+			<span id="modal_close">&times;</span>
+			<img class="modal-content" id="modal_img">
+			<video id="modal_video">
+				<source id="modal_video_src" type="video/ogg">
+			</video>
+			<div id="modal_caption">
+			</div>
+		</div>
+
 	</div>
 
 </body>

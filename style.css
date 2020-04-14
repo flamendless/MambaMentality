@@ -2,7 +2,10 @@
 Color Palettes:;
 Lakers - https://www.color-hex.com/color-palette/45348
 Purple&Gold - https://www.color-hex.com/color-palette/83793
+
+Gradients: https://uigradients.com/
 */
+
 :root
 {
 	--color-banner: #e3e4e6;
@@ -35,6 +38,11 @@ body, html
 {
 	height: 100%;
 	background-color: #2a2438;
+	background-image: url("assets/art8.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 body { overflow-x: hidden; }
@@ -53,7 +61,7 @@ body { overflow-x: hidden; }
 #banner_text
 {
 	color: var(--palette-lal-yellow);
-	text-shadow: 8px 8px 16px var(--palette-lal-purple);
+	text-shadow: 8px 8px 8px var(--palette-lal-purple);
 	opacity: 60%;
 }
 
@@ -117,6 +125,7 @@ body { overflow-x: hidden; }
 	padding-bottom: 8px;
 	padding-left: 16px;
 	padding-right: 16px;
+	transition-duration: 0.4s;
 }
 
 .navbar a:hover
@@ -249,12 +258,8 @@ body { overflow-x: hidden; }
 
 #main
 {
-	background-image: url("assets/art8.png");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	padding: 128px;
+	height: 100%;
 }
 
 #mosaic
@@ -275,7 +280,10 @@ body { overflow-x: hidden; }
 
 .mosaic-tile
 {
-	border: 2px solid rgba(253, 184, 39, 0.5);
+	box-shadow:
+		0px 0px 32px 2px rgba(253, 184, 39, 0.5),
+		0px 0px 32px 2px rgba(253, 184, 39, 0.5) inset;
+	cursor: pointer;
 }
 
 .mosaic-tile img
@@ -365,30 +373,165 @@ body { overflow-x: hidden; }
 
 .actions
 {
-	border: 1px solid red;
 	text-align: center;
-	width: 50%;
+	width: 25%;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding-left: 64px;
-	padding-right: 64px;
+}
+
+.actions-container
+{
+	border-radius: 32px;
+	width: 100%;
+	padding: 4px;
+	/*background-color: #f44336;*/
+	box-shadow: 0px 0px 32px 8px #00564d;
+	background: #e52d27;
+	background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+	background: linear-gradient(to right, #b31217, #e52d27);
 }
 
 .actions .icon-button
 {
 	background-color: var(--palette-lal-purple);
 	border: none;
+	border-radius: 12px;
 	color: var(--palette-lal-yellow);
-	padding: 12px;
+	padding: 8px;
 	margin-left: 16px;
 	margin-right: 16px;
-	font-size: 24px;
+	font-size: 16px;
 	cursor: pointer;
+	outline: none;
+	transition-duration: 0.4s;
 }
 
 .actions .icon-button:hover
 {
 	background-color: var(--palette-lal-yellow);
 	color: var(--palette-lal-white);
+}
+
+.actions .icon-button:focus
+{
+	background-color: var(--palette-lal-yellow);
+	color: var(--palette-lal-white);
+}
+
+.tooltip
+{
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltip-text
+{
+	visibility: hidden;
+	width: 128px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 8px 8px;
+	border-radius: 8px;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -64px;
+	position: absolute;
+	z-index: 1;
+}
+
+.tooltip:hover .tooltip-text
+{
+	visibility: visible;
+}
+
+.tooltip .tooltip-text::after
+{
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: -6px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.modal
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: var(--palette-lal-black);
+}
+
+.modal-content
+{
+	margin-left: 64px;
+	display: block;
+	width: 75%;
+	max-width: 640px;
+}
+
+#modal_img
+{
+	width: auto;
+	height: 75%;
+	box-shadow: 0px 0px 16px 4px var(--palette-lal-yellow);
+}
+
+#modal_video
+{
+	width: 75%;
+	height: auto;
+}
+
+#modal_caption
+{
+	margin: auto;
+	display: block;
+	width: 75%;
+	max-width: 640px;
+	font-family: "ThankYouKobe";
+	color: var(--palette-lal-yellow);
+	font-size: 4vw;
+	text-align: center;
+	padding: 8px;
+	height: 128px;
+	text-shadow: 0px 0px 16px var(--palette-lal-purple);
+}
+
+#modal_close
+{
+	position: absolute;
+	top: 64px;
+	right: 32px;
+	color: var(--palette-lal-white);
+	font-size: 48px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+#modal_close:hover,
+#modal_close:focus
+{
+	color: var(--palette-lal-yellow);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px)
+{
+	.modal-content
+	{
+		width: 100%;
+	}
 }

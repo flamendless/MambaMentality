@@ -75,5 +75,30 @@ function generate_mosaic()
 		const container = $("<div></div>").addClass("container-overlay").appendTo(flip_back);
 		const overlay = $("<div></div>").addClass("overlay").appendTo(container);
 		const text = $("<div></div>").addClass("overlay-text").text(src.text).appendTo(overlay);
+		tile.click(
+			function()
+			{
+				generate_modal(img);
+			});
 	}
+}
+
+function generate_modal(img)
+{
+	const id = img.attr("id");
+	const modal = $("#mosaic_modal");
+	const modal_img = $("#modal_img");
+	const span = $("#modal_close");
+	const caption = $("#modal_caption");
+	const vid = $("#modal_video");
+	const vid_src = $("#modal_video_src");
+
+	modal.fadeIn(250);
+	modal_img.attr("src", img.attr("src"));
+	caption.text(img.attr("alt"));
+	span.click(
+		function()
+		{
+			modal.fadeOut(250);
+		});
 }
