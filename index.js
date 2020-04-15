@@ -78,24 +78,58 @@ function generate_mosaic()
 		tile.click(
 			function()
 			{
-				generate_modal(img);
+				generate_modal(src.id, src.alt);
 			});
 	}
 }
 
-function generate_modal(img)
+const videos = {};
+videos.jumpshot = {
+	src: "assets/video/jumpshot.mp4",
+	info_head: "Jumpshot",
+	content: "",
+};
+videos.fadeaway = {
+	src: "assets/video/jumpshot.mp4",
+	info_head: "Fadeaway",
+	content: "",
+};
+videos.dunk = {
+	src: "assets/video/jumpshot.mp4",
+	info_head: "Dunk",
+	content: "",
+};
+videos.layup = {
+	src: "assets/video/jumpshot.mp4",
+	info_head: "Layup",
+	content: "",
+};
+videos.defense = {
+	src: "assets/video/jumpshot.mp4",
+	info_head: "Defense",
+	content: "",
+};
+
+function generate_modal(id, alt)
 {
-	const id = img.attr("id");
 	const modal = $("#mosaic_modal");
-	const modal_img = $("#modal_img");
 	const span = $("#modal_close");
 	const caption = $("#modal_caption");
 	const vid = $("#modal_video");
 	const vid_src = $("#modal_video_src");
+	const info_head = $("#modal_info .info-head");
+	const info_content = $("#modal_info .info-content p");
+
+	const vids = videos[id];
+
+	vid_src.attr("src", vids.src);
+	vid[0].load();
+
+	info_head.text(vids.info_head);
+	info_content.text(vids.content);
 
 	modal.fadeIn(250);
-	modal_img.attr("src", img.attr("src"));
-	caption.text(img.attr("alt"));
+	caption.text(alt);
 	span.click(
 		function()
 		{

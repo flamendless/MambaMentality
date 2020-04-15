@@ -459,47 +459,85 @@ body { overflow-x: hidden; }
 	border-color: black transparent transparent transparent;
 }
 
-.modal
+#mosaic_modal
 {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 101;
 	padding-top: 100px;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: var(--palette-lal-black);
+	/*background-color: var(--palette-lal-black);*/
+	background-image: url('assets/art1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .modal-content
 {
-	margin-left: 64px;
-	display: block;
+	display: inline-block;
 	width: 75%;
 	max-width: 640px;
 }
 
-#modal_img
-{
-	width: auto;
-	height: 75%;
-	box-shadow: 0px 0px 16px 4px var(--palette-lal-yellow);
-}
-
 #modal_video
 {
-	width: 75%;
+	position: absolute;
+	width: 100%;
 	height: auto;
+	margin: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#modal_video[poster]
+{
+	object-fit: scale-down;
+}
+
+#modal_info
+{
+	margin-left: 32px;
+	width: 20%;
+	height: 75%;
+	box-shadow: 0px 0px 16px 4px var(--palette-lal-purple);
+	background: #0F2027;
+	background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+	background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
+}
+
+#modal_info .info-head
+{
+	text-align: center;
+	text-decoration: underline;
+	text-shadow: -4px 4px 8px var(--palette-lal-purple);
+	font-family: "ThankYouKobe";
+	color: var(--palette-lal-yellow);
+	font-size: 2vw;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+#modal_info .info-content p
+{
+	text-align: left;
+	text-indent: 2em;
+	color: var(--palette-lal-gray);
+	text-shadow: -2px 2px 8px var(--palette-lal-black);
+	font-family: "TimelessBold";
+	font-size: 2vh;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
 #modal_caption
 {
 	margin: auto;
-	display: block;
-	width: 75%;
-	max-width: 640px;
 	font-family: "ThankYouKobe";
 	color: var(--palette-lal-yellow);
 	font-size: 4vw;
@@ -512,12 +550,13 @@ body { overflow-x: hidden; }
 #modal_close
 {
 	position: absolute;
-	top: 64px;
+	top: 8px;
 	right: 32px;
 	color: var(--palette-lal-white);
-	font-size: 48px;
+	font-size: 36px;
 	font-weight: bold;
 	transition: 0.3s;
+	border-bottom: 2px solid var(--palette-lal-yellow);
 }
 
 #modal_close:hover,
@@ -533,5 +572,14 @@ body { overflow-x: hidden; }
 	.modal-content
 	{
 		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	#modal_info,
+	#modal_img
+	{
+		display: none;
 	}
 }

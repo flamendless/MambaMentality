@@ -101,12 +101,16 @@
 		<!-- Modal (activated in index.js) -->
 		<div id="mosaic_modal" class="modal">
 			<span id="modal_close">&times;</span>
-			<img class="modal-content" id="modal_img">
-			<video id="modal_video">
-				<source id="modal_video_src" type="video/ogg">
-			</video>
-			<div id="modal_caption">
+			<div id="modal_info" class="modal-content">
+				<div class="info-head"></div>
+				<div class="info-content">
+					<p></p>
+				</div>
 			</div>
+			<video id="modal_video" class="modal-content" controls poster="assets/video/thumbnail.png">
+				<source id="modal_video_src" type="video/mp4">
+			</video>
+			<div id="modal_caption"></div>
 		</div>
 
 	</div>
