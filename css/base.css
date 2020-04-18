@@ -1,0 +1,47 @@
+/*
+Color Palettes:;
+Lakers - https://www.color-hex.com/color-palette/45348
+Purple&Gold - https://www.color-hex.com/color-palette/83793
+
+Gradients: https://uigradients.com/
+*/
+
+:root
+{
+  --color-banner: #e3e4e6;
+  --palette-lal-white: #ffffff;
+  --palette-lal-yellow: #fdb827;
+  --palette-lal-purple: #542583;
+  --palette-lal-black: #000000;
+  --palette-lal-gray: #aaaaaa;
+  --palette-pag-purple: #7b007b;
+  --palette-pag-pink: #ffe3e8;
+  --palette-pag-gold: #ffd700;
+  --palette-pag-light: #b36ab3;
+  --palette-pag-black: #282727;
+
+  --duration-flip: 0.5s;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--palette-lal-gray); }
+::-webkit-scrollbar-thumb { background: var(--palette-lal-purple); }
+::-webkit-scrollbar-thumb:hover { background: var(--palette-lal-yellow); }
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body, html
+{
+  height: 100%;
+  background-color: #2a2438;
+  background-image: url("../assets/art8.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body { overflow-x: hidden; }
