@@ -1,0 +1,126 @@
+@import url("base.css");
+
+.footer
+{
+	background-color: var(--palette-lal-black);
+	box-sizing: border-box;
+	width: 100%;
+	padding: 32px 32px;
+	overflow: hidden;
+
+	background-image: url("../assets/art1.png");
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer .footer-center
+{
+	text-align: center;
+}
+
+.footer .footer-brand
+{
+	display: inline-flex;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+
+.footer .footer-brand h3
+{
+	color: var(--palette-lal-yellow);
+	font-family: "ThankYouKobe";
+	font-weight: normal;
+	font-size: 64px;
+	text-shadow: 8px 8px 8px var(--palette-lal-purple);
+	opacity: 60%;
+}
+
+.footer .footer-brand img
+{
+	vertical-align: middle;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.footer hr
+{
+	width: 25%;
+	margin: auto;
+	margin-bottom: 16px;
+	border: 1px solid var(--palette-lal-gray);
+	box-shadow: 0px 0px 16px 1px var(--palette-lal-white);
+}
+
+.footer .footer-links
+{
+	color: var(--palette-lal-yellow);
+	opacity: 75%;
+}
+
+.footer .footer-links a
+{
+	display: inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: inherit;
+	font-family: "ThankYouKobe";
+	font-size: 20px;
+	text-align: center;
+	text-shadow: -4px 2px 8px var(--palette-lal-purple);
+	padding-left: 12px;
+	padding-right: 12px;
+	transition: .25s ease;
+}
+
+.footer .footer-links a:hover
+{
+	color: var(--palette-lal-purple);
+}
+
+.footer .footer-copyright
+{
+	font-family: "timeless";
+	color: var(--palette-lal-white);
+	font-size: 16px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.footer .footer-icons
+{
+	margin-top: 32px;
+}
+
+.footer .footer-icons a
+{
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+	background-color: var(--palette-lal-purple);
+	color: var(--palette-lal-yellow);
+	font-size: 32px;
+	border-radius: 8px;
+	text-align: center;
+	margin-right: 6px;
+	margin-left: 6px;
+	transition: .25s ease;
+}
+
+.footer .footer-icons a i
+{
+	vertical-align: middle;
+}
+
+.footer .footer-icons a:hover
+{
+	background-color: var(--palette-lal-yellow);
+}
+
+.footer .footer-icons a i:hover
+{
+	color: var(--palette-lal-purple);
+}

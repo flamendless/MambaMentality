@@ -137,7 +137,7 @@
 #main
 {
 	padding: 128px;
-	height: 100%;
+	height: auto;
 }
 
 #mosaic
@@ -290,6 +290,8 @@
 
 .tooltip .tooltip-text
 {
+	font-family: "Timeless";
+	font-size: 18px;
 	visibility: hidden;
 	width: 128px;
 	background-color: black;

@@ -5,8 +5,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Home - Mamba Mentality</title>
-	<script src="./includes/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+
+	<script src="./includes/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./includes/isvg.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" type="text/css" href="./includes/fontawesome-free-5.11.2-web/css/all.min.css">	
+
 	<link rel="stylesheet" type="text/css" href="./css/home.css">
 	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="./css/navbar.css">
@@ -21,8 +24,9 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<script src="./js/navbar.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script src="./js/home.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="./js/navbar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/home.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/footer.js" type="text/javascript" charset="utf-8"></script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </head>
@@ -50,7 +54,7 @@
 		<div class="navbar">
 			<a href="./index.html#banner_image" class="active">Home</a>
 
-			<a href="./webpages/timeline.html">Timeline</a>
+			<a href="./webpages/story.html">Story</a>
 			<a href="./webpages/training.html">Training</a>
 
 			<div class="navbar-right">
@@ -84,10 +88,10 @@
 			<div class="mosaic-tile flip">
 				<div class="flip-inner">
 					<div class="flip-front">
-						<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
+						<img id="img_defense" src="./assets/defense.png" alt="Kobe on defense">
 					</div>
 					<div class="flip-back">
-						<img id="img_defense" src="assets/defense.png" alt="Kobe on defense">
+						<img id="img_defense" src="./assets/defense.png" alt="Kobe on defense">
 						<div class="container-overlay">
 							<div class="overlay">
 								<div class="overlay-text">
@@ -111,13 +115,53 @@
 					<ul class="info-links"></ul>
 				</div>
 			</div>
-			<video id="modal_video" class="modal-content" controls poster="assets/video/thumbnail.png">
+			<video id="modal_video" class="modal-content" controls poster="./assets/video/thumbnail.png">
 				<source id="modal_video_src" type="video/mp4">
 			</video>
 			<div id="modal_caption"></div>
 		</div>
-
 	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-center">
+			<div class="footer-brand">
+				<h3>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					Mamba
+					<img id="svg_logo" class="isvg" src="./assets/logo.svg">
+					Mentality
+				</h3>
+			</div>
+			<hr>
+			<p class="footer-links">
+				<a href="./index.html">Home</a>
+				<a href="./story.html">Story</a>
+				<a href="./training.html">Training</a>
+				<a href="./merchandise.html">Merchandise</a>
+				<a href="./quiz.html">Quiz</a>
+				<a href="./about.html">About</a>
+			</p>
+			<p class="footer-copyright">
+				flamendless © 2020
+			</p>
+
+			<div class="footer-icons">
+				<a href="https://github.com/flamendless" class="tooltip">
+					<i class="fab fa-github"></i>
+					<span class="tooltip-text">Check me on GitHub</span>
+				</a>
+				<a href="https://twitter.com/flamendless" class="tooltip">
+					<i class="fab fa-twitter"></i>
+					<span class="tooltip-text">Follow me on Twitter</span>
+				</a>
+				<a href="mailto:flamendless@gmail.com" class="tooltip">
+					<i class="fa fa-envelope"></i>
+					<span class="tooltip-text">Send me an E-Mail</span>
+				</a>
+			</div>
+		</div>
+	</footer>
 
 </body>
 </html>
