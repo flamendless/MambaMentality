@@ -137,7 +137,7 @@ videos.fadeaway = {
 		shot as he continued his basketball journey with the dream of surpassing his idol.`,
 	links: [
 		{
-			link: "./webpages/fadeaway.html",
+			link: "#fadeaway",
 			text: "Click here to learn more",
 		},
 	]
@@ -203,8 +203,8 @@ function generate_modal(id, alt)
 	const info_content_p = $("#modal_info .info-content p");
 	const info_links = $("#modal_info .info-links");
 
-	const random = Math.floor((Math.random() * BACKGROUNDS.length) + 1);
-	const random_bg = `../assets/art${random}.png`;
+	const random = get_random_bg();
+	const random_bg = `./assets/art${random}.png`;
 	modal.css("background-image", `url(${random_bg})`);
 
 	const vids = videos[id];
