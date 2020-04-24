@@ -1,9 +1,7 @@
 $(document).ready(
 function()
 {
-	const url = window.location.pathname;
-	const f = url.substring(url.lastIndexOf("/") + 1);
-
+	const f = get_base_path();
 	let root = "";
 	let webpages = "";
 
