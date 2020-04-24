@@ -121,7 +121,7 @@ videos.jumpshot = {
 	links: [
 		{
 			link: "./webpages/jumpshot.html",
-			text: "Learn here about the shooting form",
+			text: "Click here to learn more",
 		},
 	]
 };
@@ -129,22 +129,66 @@ videos.jumpshot = {
 videos.fadeaway = {
 	src: "assets/video/fadeaway.mp4",
 	info_head: "Fadeaway",
-	content: "",
+	content: `One of Kobe's offensive arsenal is the fadeaway shot. Fadeaway shot is not an easy move to pull off.
+		After all, it seems odd to shoot while inching away from the basket instead of going nearer.
+		But with the difficulty of this shooting motion allows players to be more versatile, deadly, and
+		harder to predict and guard. Kobe's fadeaway form is very similar and reminiscent to the Greatest Of All Time (GOAT) Michael Jordan,
+		simply saying that Kobe admires and imitates his idol is an understatement. Kobe developed and practiced his fadeaway
+		shot as he continued his basketball journey with the dream of surpassing his idol.`,
+	links: [
+		{
+			link: "./webpages/fadeaway.html",
+			text: "Click here to learn more",
+		},
+	]
 };
+
 videos.dunk = {
 	src: "assets/video/dunk.mp4",
 	info_head: "Dunk",
-	content: "",
+	content: `From the gravity-defying leap into the air to the power and intensity of the slam has always been one of the
+		most amazing and eye-catching highlight reel in any basketball match. This is no exception when it comes to Kobe Bryant,
+		his dunk has left viewers gasping for air as he fearlessly leaps and dunks in every game. The motion, artistic quality, and
+		finesse he displays is a must watch for every basketball fans out there.`,
+	links: [
+		{
+			link: "./webpages/dunk.html",
+			text: "Click here to learn more",
+		},
+	]
 };
+
 videos.layup = {
 	src: "assets/video/layup.mp4",
 	info_head: "Layup",
-	content: "",
+	content: `One of the fundamental moves in basketball is the layup. It is very basic that anyone who plays this sport knows it and
+		have done it multiple times. It is the easiest way to perform, it is even easier to score a point with layup than to shoot.
+		It is not as amazing as a dunk but players have found different ways to make it amazing and even harder to guard and block.
+		One of the many players who excel at making difficult and acrobatic layup to stun the defenders and to entertain the crowd is
+		Kobe Bryant, his layup is unpredictable and his reverse layup is smooth and precise.`,
+	links: [
+		{
+			link: "./webpages/layup.html",
+			text: "Click here to learn more",
+		},
+	]
 };
+
 videos.defense = {
 	src: "assets/video/defense.mp4",
 	info_head: "Defense",
-	content: "",
+	content: `Defense is not that highly praised compared to the other end of the spectrum of strategy in basketball, which is offense.
+		Defense is shy from spotlight and highlight reel but is indeed very essential skill that every player must practice and perform.
+		Defense ranges from steals, blocks, and rebounds can not only prevent the opponent team from scoring, but it also demoralizes opposing
+		player. Kobe Bryant is well-known also for his tight and unrelentless defense. After all, one of the most noticable personality of him
+		is his competitiveness and hatred of losing. That is why when he defends, he pours as much energy into guarding his opponent as much as
+		he is trying to score in offense.`,
+	links: [
+		{
+			link: "./webpages/defense.html",
+			text: "Click here to learn more",
+		},
+	]
 };
 
 const backgrounds = [2, 3, 4, 5, 6, 7, 9, 10, 11];
@@ -162,7 +206,7 @@ function generate_modal(id, alt)
 	const info_links = $("#modal_info .info-links");
 
 	const random = Math.floor((Math.random() * backgrounds.length) + 1);
-	const random_bg = `assets/art${random}.png`;
+	const random_bg = `../assets/art${random}.png`;
 	modal.css("background-image", `url(${random_bg})`);
 
 	const vids = videos[id];

@@ -1,12 +1,7 @@
 $(document).ready(
 function()
 {
-	$.get("./webpages/footer.html",
-		function(data)
-		{
-			$("#footer").html(data);
-			setup_effects();
-		});
+	setup_effects();
 });
 
 function setup_effects()

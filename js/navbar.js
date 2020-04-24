@@ -1,13 +1,12 @@
 $(document).ready(
 function()
 {
-	$.get("./webpages/navbar.html",
-		function(data)
-		{
-			$("#navbar").html(data);
-			setup_sticky();
-			setup_svg();
-		});
+	const url = window.location.href;
+	const filename = url.match(/.*\/(.*)$/)[1];
+
+	setup_svg();
+	if (filename == "index.html" || filename == "")
+		setup_sticky();
 });
 
 function setup_sticky()

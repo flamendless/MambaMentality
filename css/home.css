@@ -1,4 +1,5 @@
 @import url("base.css");
+@import url("tooltip.css");
 
 #banner_image
 {
@@ -8,7 +9,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-	margin: auto; 
+	margin: auto;
 }
 
 #banner_text
@@ -49,7 +50,7 @@
 	font-weight: normal;
 	color: var(--color-banner);
 	opacity: 60%;
-	font-size: 16px;
+	font-size: 24px;
 	padding: 8px;
 	position: absolute;
 	bottom: 2px;
@@ -282,48 +283,6 @@
 	color: var(--palette-lal-white);
 }
 
-.tooltip
-{
-	position: relative;
-	display: inline-block;
-}
-
-.tooltip .tooltip-text
-{
-	font-family: "Timeless";
-	font-size: 18px;
-	visibility: hidden;
-	width: 128px;
-	background-color: black;
-	color: #fff;
-	text-align: center;
-	padding: 8px 8px;
-	border-radius: 8px;
-	bottom: 100%;
-	left: 50%;
-	margin-left: -64px;
-	position: absolute;
-	z-index: 1;
-}
-
-.tooltip:hover .tooltip-text
-{
-	visibility: visible;
-}
-
-.tooltip .tooltip-text::after
-{
-	content: " ";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	transform: translateX(-50%);
-	margin-left: -6px;
-	border-width: 6px;
-	border-style: solid;
-	border-color: black transparent transparent transparent;
-}
-
 #mosaic_modal
 {
 	display: none;
@@ -347,6 +306,7 @@
 	display: inline-block;
 	width: 75%;
 	max-width: 640px;
+	overflow-y: auto;
 }
 
 #modal_video
@@ -401,6 +361,12 @@
 }
 
 #modal_info .info-content ul li a
+{
+	color: var(--palette-lal-yellow);
+	transition: 0.5s ease;
+}
+
+#modal_info .info-content ul li a:hover
 {
 	color: red;
 }
