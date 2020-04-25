@@ -1,12 +1,8 @@
 $(document).ready(
 function()
 {
-	const url = window.location.href;
-	const filename = url.match(/.*\/(.*)$/)[1];
 	create_navbar();
-
-	if (filename == "index.html" || filename == "")
-		setup_sticky();
+	setup_sticky();
 });
 
 function create_navbar()

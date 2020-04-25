@@ -27,3 +27,45 @@
   font-family: "TimelessBold";
   src: url("../fonts/timeless_bold.ttf");
 }
+
+@font-face
+{
+  font-family: "KenyanCoffeeBold";
+  src: url("../fonts/kenyan_coffee_bd.ttf");
+}
+
+@font-face
+{
+  font-family: "KenyanCoffeeBoldItalic";
+  src: url("../fonts/kenyan_coffee_bd_it.ttf");
+}
+
+@font-face
+{
+  font-family: "KenyanCoffee";
+  src: url("../fonts/kenyan_coffee_rg.ttf");
+}
+
+@font-face
+{
+  font-family: "KenyanCoffeeItalic";
+  src: url("../fonts/kenyan_coffee_rg_it.ttf");
+}
+
+@font-face
+{
+  font-family: "EternateBold";
+  src: url("../fonts/Eternate_Bold.otf");
+}
+
+@font-face
+{
+  font-family: "EternateTwo";
+  src: url("../fonts/Eternate_Two.otf");
+}
+
+@font-face
+{
+  font-family: "EternateTwoBold";
+  src: url("../fonts/Eternate_Two_Bold.otf");
+}
