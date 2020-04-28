@@ -544,23 +544,57 @@
 
 #about_us
 {
+	display: grid;
+	grid-template-rows: repeat(1, 1fr);
+	grid-gap: 1rem;
+}
+
+#about_us .banner h1
+{
+	color: var(--palette-lal-black);
+	text-align: center;
+	font-size: 44px;
+	font-family: "KenyanCoffeeBold";
+}
+
+#about_us .banner h4
+{
+	color: var(--palette-lal-black);
+	text-align: center;
+	font-size: 22px;
+	font-family: "KenyanCoffee";
+	font-weight: normal;
+}
+
+#about_us .banner hr
+{
+	margin: auto;
+	width: 75%;
+	border: 1px solid var(--palette-lal-purple);
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#about_us .flex-main
+{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding: 16px;
+	box-shadow: 0px 0px 16px var(--palette-lal-gray) inset;
 }
 
 #about_us .flex-row
 {
-	border: 1px solid red;
 	box-shadow: -8px 8px 16px var(--palette-lal-black);
-	padding: 32px;
+	padding: 24px;
 	margin-left: 16px;
 	margin-right: 16px;
 }
 
 #about_us .flex-row img
 {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 24px;
@@ -572,18 +606,20 @@
 	text-align: center;
 	font-family: "ThankYouKobe";
 	font-weight: normal;
-	font-size: 24px;
+	font-size: 22px;
 }
 
 #about_us .flex-row h4
 {
 	text-align: center;
 	font-family: "EternateTwoBold";
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #about_us .flex-row p
 {
+	font-family: "Eternate";
+	font-size: 14px;
 }
 
 @media only screen and (max-width: 700px)
