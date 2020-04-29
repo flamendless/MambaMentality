@@ -5,7 +5,7 @@
 	position: relative;
 	overflow: hidden;
 	margin-top: 8px;
-	height: 128px;
+	height: auto;
 }
 
 .navbar .navbar-main

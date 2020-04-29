@@ -27,22 +27,3 @@ Gradients: https://uigradients.com/
 ::-webkit-scrollbar-track { background: var(--palette-lal-gray); }
 ::-webkit-scrollbar-thumb { background: var(--palette-lal-purple); }
 ::-webkit-scrollbar-thumb:hover { background: var(--palette-lal-yellow); }
-
-*
-{
-	margin: 0;
-	padding: 0;
-}
-
-body, html
-{
-	height: 100%;
-	background-color: #2a2438;
-	background-image: url("../assets/art8.png");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-body { overflow-x: hidden; }

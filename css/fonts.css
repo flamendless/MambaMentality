@@ -69,3 +69,9 @@
   font-family: "EternateTwoBold";
   src: url("../fonts/Eternate_Two_Bold.otf");
 }
+
+@font-face
+{
+  font-family: "SundayBest";
+  src: url("../fonts/SundayBest.ttf");
+}

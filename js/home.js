@@ -3,28 +3,6 @@ function()
 {
 	generate_mosaic();
 
-	const main = $("#main");
-	const mosaic = $("#mosaic");
-	const btn_minimize = $("#minimize");
-	const btn_maximize = $("#maximize");
-
-	const default_size = "repeat(4, 10vw)";
-	const max_size = "repeat(4, 1fr)";
-
-	btn_minimize.click(
-		function()
-		{
-			mosaic.css("grid-template-columns", default_size);
-			mosaic.addClass("center-grid");
-		});
-
-	btn_maximize.click(
-		function()
-		{
-			mosaic.css("grid-template-columns", max_size);
-			mosaic.removeClass("center-grid");
-		});
-
 	$(document).on("keyup",
 		function(event)
 		{
@@ -105,7 +83,6 @@ function generate_mosaic()
 			.text(src.text)
 			.appendTo(overlay);
 
-		// tile.click(function() { generate_modal(src.id, src.alt); });
 		tile.click(() => generate_modal(src.id, src.alt));
 	}
 }
@@ -120,7 +97,7 @@ videos.jumpshot = {
 		defenders find it very hard to guard him.`,
 	links: [
 		{
-			link: "./webpages/jumpshot.html",
+			link: "#jumpshot",
 			text: "Click here to learn more",
 		},
 	]

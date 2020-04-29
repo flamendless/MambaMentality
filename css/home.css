@@ -1,6 +1,25 @@
 @import url("base.css");
 @import url("tooltip.css");
 
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body, html
+{
+	height: 100%;
+	background-color: #2a2438;
+	background-image: url("../assets/art8.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body { overflow-x: hidden; }
+
 #banner_image
 {
 	height: 100%;
@@ -238,51 +257,6 @@
 	transform: scaleX(-1);
 }
 
-.actions
-{
-	text-align: center;
-	width: 25%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.actions-container
-{
-	border-radius: 32px;
-	width: 100%;
-	padding: 4px;
-	box-shadow: 0px 0px 32px 8px #00564d;
-	background: linear-gradient(to right, var(--palette-lal-purple), var(--palette-lal-yellow));
-}
-
-.actions .icon-button
-{
-	background-color: var(--palette-lal-purple);
-	border: none;
-	border-radius: 12px;
-	color: var(--palette-lal-yellow);
-	padding: 8px;
-	margin-left: 16px;
-	margin-right: 16px;
-	font-size: 16px;
-	cursor: pointer;
-	outline: none;
-	transition-duration: 0.4s;
-}
-
-.actions .icon-button:hover
-{
-	background-color: var(--palette-lal-yellow);
-	color: var(--palette-lal-white);
-}
-
-.actions .icon-button:focus
-{
-	background-color: var(--palette-lal-yellow);
-	color: var(--palette-lal-white);
-}
-
 #mosaic_modal
 {
 	display: none;
@@ -330,7 +304,6 @@
 	height: 75%;
 	box-shadow: 0px 0px 16px 4px var(--palette-lal-purple);
 	background: #0F2027;
-	background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
 	background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027);
 }
 
@@ -420,6 +393,10 @@
 	color: var(--palette-lal-yellow);
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.feature
+{
 }
 
 .feature .row
