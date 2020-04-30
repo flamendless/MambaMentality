@@ -41,18 +41,25 @@
 			<div class="title">
 				<h1>The Mamba Mentality Quiz</h1>
 				<hr>
-				<h4>
+				<h4 class="direction">
 					<b>Direction:</b>
 					Choose and click your desired answer for every question.
 					Then click the Submit button at the bottom of the page to validate
 					your answer and get the result.
 				</h4>
-				<h4>
+				<h4 class="note">
 					<b>Note:</b>
 					No personal information about you will be collected.
 					We treasure your privacy.
 				</h4>
-				<hr style="width: 25%; margin-bottom: 16px;">
+				<hr class="bottom-hr" style="width: 25%; margin-bottom: 16px;">
+			</div>
+
+			<div id="quiz_score" class="hidden">
+				<h1>YOUR SCORE IS:</h1>
+				<!-- This is to be dynamicaly generated inside quiz.js -->
+				<!-- <h2 class="score&#45;text"></h2> -->
+				<!-- <div class="stars"></div> -->
 			</div>
 
 			<div id="quiz">
@@ -60,10 +67,15 @@
 				<!-- Template is quiz_content.html -->
 				<!-- But it will be dynamically generated in quiz.js -->
 			</div>
+
 			<div class="content-break"></div>
-			<button id="submit">
+			<button id="submit" class="button">
 				<i class="fa fa-check"></i>
 				SUBMIT
+			</button>
+			<button id="retake" class="button hidden">
+				<i class="fa fa-redo"></i>
+				RETAKE
 			</button>
 		</div>
 	</div>

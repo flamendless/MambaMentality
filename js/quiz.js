@@ -3,11 +3,35 @@ function()
 {
 	generate_quiz();
 
-	const button = $("#submit")
+	const submit = $("#submit")
 		.click(function(){
-			check_quiz();
+			const flag = confirm("Are you sure you want to submit the quiz?");
+			if (flag)
+			{
+				const result = check_quiz();
+				change_view();
+				show_score(result);
+			}
 		});
+
+	const retake = $("#retake")
+		.click(function()
+			{
+				const flag = confirm("Are you sure you want to retake the quiz?");
+				if (flag)
+					location.reload();
+			});
 })
+
+function change_view(view)
+{
+	const submit = $("#submit").addClass("hidden");
+	const retake = $("#retake").removeClass("hidden");
+	const main = $("#quiz").addClass("hidden");
+	const direction = $(".direction").addClass("hidden");
+	const note = $(".note").addClass("hidden");
+	const bottom_hr = $(".bottom-hr").addClass("hidden");
+}
 
 //The list of data (question, choices, answer) that will be randomized every time the page is loaded
 const quiz_content = [
@@ -119,7 +143,7 @@ function generate_choices(choices, form)
 		const div = $("<div></div>")
 			.addClass("choice")
 			.appendTo(form);
-		const input = $("<input type='radio'>")
+		const input = $("<input type='radio' name='input-choice'>")
 			.appendTo(div);
 		const span = $("<span></span>")
 			.text(text_choice)
@@ -132,10 +156,46 @@ function check_quiz()
 	const main = $("#quiz");
 	const questions = $(".quiz-question");
 
+	const total = questions.length;
+	let score = 0;
+
 	for (let i = 0; i < questions.length; i++)
 	{
 		const current = questions[i];
 		const correct_answer = $(current).attr("data-answer");
-		// const user_answer = $(current).attr("data-user-answer");
+		const form = $(current).find("form");
+		const user_answer = $(form).find("input[name='input-choice']:checked").parent().find("span").text();
+		if (correct_answer == user_answer)
+			score++;
+	}
+
+	return [score, total];
+}
+
+function show_score(data)
+{
+	// const score = data[0];
+	// const total = data[1];
+	const score = 5;
+	const total = 10;
+
+	const quiz_score = $("#quiz_score");
+	quiz_score.removeClass("hidden");
+
+	const text = $("<h2></h2>")
+		.addClass("score-text")
+		.text(`${score}/${total}`)
+		.appendTo(quiz_score);
+
+	//generate number of stars
+	const stars = $("<div></div>").addClass("stars").appendTo(quiz_score);
+	for (let i = 0; i < total; i++)
+	{
+		const star = $("<i></i>")
+			.addClass("fa fa-star")
+			.appendTo(stars);
+
+		if (i < score)
+			star.addClass("star-correct");
 	}
 }

@@ -75,3 +75,9 @@
   font-family: "SundayBest";
   src: url("../fonts/SundayBest.ttf");
 }
+
+@font-face
+{
+  font-family: "Allstar";
+  src: url("../fonts/Allstar4.ttf");
+}

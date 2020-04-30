@@ -114,7 +114,7 @@ body { overflow-x: hidden; }
 	height: 0;
 }
 
-#submit
+.button
 {
 	margin: auto;
 	background-color: var(--palette-lal-purple);
@@ -127,13 +127,63 @@ body { overflow-x: hidden; }
 	transition: 0.5s ease;
 }
 
-#submit:hover
+.button:hover
 {
 	background-color: var(--palette-lal-yellow);
 	color: var(--palette-lal-purple);
 }
 
-#submit:hover i
+.button:hover i
 {
 	color: green;
+}
+
+#quiz_score
+{
+	margin: auto;
+	margin-bottom: 32px;
+}
+
+#quiz_score h1
+{
+	font-family: "Allstar";
+	text-align: center;
+	text-decoration: underline;
+}
+
+#quiz_score .score-text
+{
+	font-family: "Allstar";
+	text-align: center;
+	margin-bottom: 24px;
+	font-size: 64px;
+}
+
+#quiz_score .stars
+{
+	margin: auto;
+}
+
+#quiz_score .stars i
+{
+	font-size: 32px;
+	margin-left: 4px;
+	margin-right: 4px;
+	color: var(--palette-lal-black);
+}
+
+#quiz_score .stars .star-correct
+{
+	color: var(--palette-lal-yellow);
+	transition: 0.5s ease;
+}
+
+#quiz_score .stars .star-correct:hover
+{
+	color: var(--palette-lal-purple);
+}
+
+.hidden
+{
+	display: none;
 }
