@@ -149,12 +149,14 @@ body { overflow-x: hidden; }
 	font-family: "Allstar";
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 12px;
 }
 
 #quiz_score .score-text
 {
 	font-family: "Allstar";
 	text-align: center;
+	margin-top: 24px;
 	margin-bottom: 24px;
 	font-size: 64px;
 }

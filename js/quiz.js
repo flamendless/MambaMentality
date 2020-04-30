@@ -174,17 +174,15 @@ function check_quiz()
 
 function show_score(data)
 {
-	// const score = data[0];
-	// const total = data[1];
-	const score = 5;
-	const total = 10;
+	const score = data[0];
+	const total = data[1];
 
 	const quiz_score = $("#quiz_score");
 	quiz_score.removeClass("hidden");
 
 	const text = $("<h2></h2>")
 		.addClass("score-text")
-		.text(`${score}/${total}`)
+		.text(`${score} / ${total}`)
 		.appendTo(quiz_score);
 
 	//generate number of stars
