@@ -38,56 +38,109 @@ const quiz_content = [
 	{
 		question: "What is the full name of the Black Mamba?",
 		choices: [
-			"choice1",
-			"choice2",
-			"choice3",
-			"choice4",
+			"Kobe Bean Bryant",
+			"Kobe Michael Bryant",
+			"Kobe Andrew Bryant",
+			"Kobe Jackson Bryant",
 		],
-		answer: "choice4"
+		answer: "Kobe Bean Bryant"
 	},
 
 	{
 		question: "Why is Kobe called the 'Black Mamba'?",
 		choices: [
-			"choice1",
-			"choice2",
-			"choice3",
-			"choice4",
+			"He was inspired by the movie 'Kill Bill' wherein an assassin uses a black mamba snake to kill",
+			"He was once bitten by a black mamba snake which nearly killed him",
+			"He was in loved with a book title 'The Way of the Assassin' which has the black mamba logo",
 		],
-		answer: "choice4"
+		answer: "He was inspired by the movie 'Kill Bill' wherein an assassin uses a black mamba snake to kill",
+	},
+
+	{
+		question: "For how long did Kobe Bryant played in the NBA?",
+		choices: [
+			"17 years",
+			"20 years",
+			"24 years",
+			"30 years",
+		],
+		answer: "20 years"
 	},
 
 	{
 		question: "What is the total career points of Kobe Bryant in the NBA",
 		choices: [
-			"choice1",
-			"choice2",
-			"choice3",
-			"choice4",
+			"33, 643 points",
+			"34, 629 points",
+			"32, 636 points",
+			"33, 640 points",
 		],
-		answer: "choice4"
+		answer: "33, 643 points"
 	},
 
 	{
-		question: "How many times have Kobe been awarded MVP during his NBA career?",
+		question: "How many times have Kobe been awarded All-Star MVP?",
 		choices: [
-			"choice1",
-			"choice2",
-			"choice3",
-			"choice4",
+			"4 times",
+			"5 times",
+			"6 times",
+			"7 times",
 		],
-		answer: "choice4"
+		answer: "4 times"
 	},
 
 	{
 		question: "What is the story behind his jersey number '24'?",
 		choices: [
-			"choice1",
-			"choice2",
-			"choice3",
-			"choice4",
+			"Symbolizes 24 hours of a day meaning to take full advantage without wasting a second.",
+			"One over Michael Jordan's 23 meaning to surpass MJ",
+			"He wore the number 24 during his childhood days a sign of rebuilding one's self for a new identity",
 		],
-		answer: "choice4"
+		answer: "He wore the number 24 during his childhood days a sign of rebuilding one's self for a new identity",
+	},
+
+	{
+		question: "How many times did Kobe Bryant practice during weekdays as a teen?",
+		choices: [
+			"2 hours a day",
+			"3 hours a day",
+			"4 hours a day",
+			"5 hours a day",
+		],
+		answer: "4 hours a day",
+	},
+
+	{
+		question: "Kobe won an academy award for best short animated film titled?",
+		choices: [
+			"Dear Basketball",
+			"The Mamba Mentality",
+			"Basketball",
+			"The Game I Live To Love",
+		],
+		answer: "Dear Basketball",
+	},
+
+	{
+		question: "How many made shots in practice did Kobe make before stopping practice?",
+		choices: [
+			"240",
+			"300",
+			"400",
+			"500",
+		],
+		answer: "400",
+	},
+
+	{
+		question: "What piano piece did Kobe teach himself by ear for his wife",
+		choices: [
+			"Moonlight Sonata",
+			"Nocturne",
+			"Pathetique",
+			"Bumblebee",
+		],
+		answer: "Moonlight Sonata",
 	},
 ]
 
@@ -167,6 +220,8 @@ function check_quiz()
 		const user_answer = $(form).find("input[name='input-choice']:checked").parent().find("span").text();
 		if (correct_answer == user_answer)
 			score++;
+		else
+			console.log(user_answer, correct_answer)
 	}
 
 	return [score, total];
