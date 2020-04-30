@@ -27,3 +27,9 @@ Gradients: https://uigradients.com/
 ::-webkit-scrollbar-track { background: var(--palette-lal-gray); }
 ::-webkit-scrollbar-thumb { background: var(--palette-lal-purple); }
 ::-webkit-scrollbar-thumb:hover { background: var(--palette-lal-yellow); }
+
+*
+{
+	margin: 0;
+	padding: 0;
+}

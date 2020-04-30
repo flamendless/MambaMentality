@@ -1,12 +1,6 @@
 @import url("base.css");
 @import url("tooltip.css");
 
-*
-{
-	margin: 0;
-	padding: 0;
-}
-
 body, html
 {
 	height: 100%;
@@ -395,10 +389,6 @@ body { overflow-x: hidden; }
 	cursor: pointer;
 }
 
-.feature
-{
-}
-
 .feature .row
 {
 	background: linear-gradient(to top, #ffffff, #c2c2c2);
@@ -439,6 +429,7 @@ body { overflow-x: hidden; }
 .feature .row .column-right a
 {
 	float: right;
+	text-align: right;
 }
 
 .feature .row .column-right p,
@@ -464,15 +455,15 @@ body { overflow-x: hidden; }
 	font-family: "KenyanCoffeeBold";
 	font-weight: bold;
 	font-size: 8vh;
-	margin: 16px;
 	line-height: 1.1875;
 	transition: 0.5s ease;
+	margin-bottom: 32px;
 }
 
 .feature .row .column p
 {
 	font-family: "KenyanCoffee";
-	font-size: 3vh;
+	font-size: 4vh;
 	margin-left: 16px;
 	margin-right: 16px;
 	margin-top: 8px;
@@ -483,11 +474,11 @@ body { overflow-x: hidden; }
 .feature .row .column a
 {
 	font-family: "KenyanCoffee";
-	font-size: 4vh;
+	font-size: 5vh;
 	color: var(--palette-lal-purple);
 	margin-left: 16px;
 	margin-right: 16px;
-	margin-top: 8px;
+	margin-top: 32px;
 	margin-bottom: 8px;
 	line-height: 1.1875;
 	transition: 0.75s ease;
@@ -628,6 +619,12 @@ body { overflow-x: hidden; }
 {
 	font-family: "Eternate";
 	font-size: 14px;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	.feature .row .column-narrow { display: none; }
+	.feature .row .column-wide { flex: 100%; }
 }
 
 @media only screen and (max-width: 700px)
