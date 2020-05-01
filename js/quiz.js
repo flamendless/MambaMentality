@@ -3,6 +3,24 @@ function()
 {
 	generate_quiz();
 
+	//this will process the event whenever the user
+	//selected a radio button as answer
+	$("form :input").change(
+		function()
+		{
+			const divs = $(this).parent().parent().parent().find(".custom");
+			divs.each(
+				function()
+				{
+					const checked = $(this).find("input").prop("checked");
+					const span = $(this).find(".choice-text");
+					if (checked)
+						span.addClass("selected");
+					else
+						span.removeClass("selected");
+				});
+		});
+
 	const submit = $("#submit")
 		.click(function(){
 			const flag = confirm("Are you sure you want to submit the quiz?");
@@ -196,11 +214,18 @@ function generate_choices(choices, form)
 		const div = $("<div></div>")
 			.addClass("choice")
 			.appendTo(form);
+		const label = $("<label></label>")
+			.addClass("custom")
+			.appendTo(div);
 		const input = $("<input type='radio' name='input-choice'>")
-			.appendTo(div);
+			.appendTo(label);
+		const custom = $("<span></span>")
+			.addClass("radio")
+			.appendTo(label);
 		const span = $("<span></span>")
+			.addClass("choice-text")
 			.text(text_choice)
-			.appendTo(div);
+			.appendTo(label);
 	}
 }
 
