@@ -60,6 +60,17 @@ body { overflow-x: hidden; }
 	margin-bottom: 16px;
 }
 
+.container .title h4
+{
+	text-align: center;
+	font-family: "Timeless";
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--palette-lal-black);
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
 .container .merch
 {
 	display: flex;
@@ -82,14 +93,15 @@ body { overflow-x: hidden; }
 .container .merch .merch-pic
 {
 	cursor: pointer;
-	width: 50%;
+	width: 75%;
 	box-shadow: -8px 8px 32px black;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	padding: 16px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding: 12px;
 	margin-left: auto;
 	margin-right: auto;
 	align-self: center;
+	background: linear-gradient(to bottom, var(--palette-lal-purple), var(--palette-lal-yellow));
 }
 
 .container .merch .merch-pic img
@@ -176,7 +188,7 @@ body { overflow-x: hidden; }
 	padding: 32px;
 	margin-left: 16px;
 	margin-top: 16px;
-	background-color: var(--palette-lal-gray);
+	background: linear-gradient(to bottom, var(--palette-lal-purple), var(--palette-lal-yellow));
 	box-shadow: 0px 0px 32px 16px var(--palette-lal-purple);
 }
 
