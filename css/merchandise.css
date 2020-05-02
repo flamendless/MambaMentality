@@ -196,3 +196,11 @@ body { overflow-x: hidden; }
 {
 	width: 360px;
 }
+
+@media screen and (max-width: 720px)
+{
+	.container .merch .merch-item
+	{
+		flex-basis: 100%;
+	}
+}

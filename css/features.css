@@ -120,12 +120,45 @@
 	flex-direction: column;
 }
 
+#about_us .about-link
+{
+	margin-top: 16px;
+	margin-bottom: 16px;
+	align-self: center;
+}
+
+#about_us .about-link a
+{
+	color: var(--palette-lal-purple);
+	text-align: center;
+	font-size: 24px;
+	font-family: "KenyanCoffee";
+	transition: 0.25s ease;
+}
+
+#about_us .about-link a:hover
+{
+	color: red;
+}
+
 #about_us .banner h1
 {
 	color: var(--palette-lal-black);
 	text-align: center;
 	font-size: 44px;
 	font-family: "KenyanCoffeeBold";
+}
+
+#about_us .banner h1 a
+{
+	color: var(--palette-lal-black);
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+#about_us .banner h1 a:hover
+{
+	color: var(--palette-lal-purple);
 }
 
 #about_us .banner h4

@@ -87,3 +87,32 @@
 {
 	padding-top: 60px;
 }
+
+@media screen and (max-width: 720px)
+{
+	.navbar .navbar-main
+	{
+		height: 48px;
+	}
+
+	.navbar .navbar-main:hover
+	{
+		height: 100%;
+	}
+
+	.navbar .navbar-main
+	{
+		flex-direction: column;
+	}
+
+	.navbar .navbar-main .navbar-logo
+	{
+		order: 1;
+	}
+
+	.navbar .navbar-main a,
+	.navbar .navbar-main li
+	{
+		order: 2;
+	}
+}

@@ -29,15 +29,19 @@ function create_footer()
 	const copyright = $("<p></p>").addClass("footer-copyright").text("flamendless © 2020").appendTo(center);
 	const icons = $("<div></div>").addClass("footer-icons").appendTo(center);
 
-	const a_github = $("<a></a>").addClass("tooltip").attr("href", "https://github.com/flamendless").appendTo(icons);
+	const a_website = $("<a></a>").addClass("tooltip").attr("href", "https://flamendless.github.io").attr("target", "_blank").appendTo(icons);
+	const i_website = $("<i></i>").addClass("fab fa-chrome").appendTo(a_website);
+	const span_website = $("<span></span>").addClass("tooltip-text").text("Check my Website").appendTo(i_website);
+
+	const a_github = $("<a></a>").addClass("tooltip").attr("href", "https://github.com/flamendless").attr("target", "_blank").appendTo(icons);
 	const i_github = $("<i></i>").addClass("fab fa-github").appendTo(a_github);
 	const span_github = $("<span></span>").addClass("tooltip-text").text("Check me on GitHub").appendTo(i_github);
 
-	const a_twitter = $("<a></a>").addClass("tooltip").attr("href", "https://twitter.com/flamendless").appendTo(icons);
+	const a_twitter = $("<a></a>").addClass("tooltip").attr("href", "https://twitter.com/flamendless").attr("target", "_blank").appendTo(icons);
 	const i_twitter = $("<i></i>").addClass("fab fa-twitter").appendTo(a_twitter);
 	const span_twitter = $("<span></span>").addClass("tooltip-text").text("Follow me on Twitter").appendTo(i_twitter);
 
-	const a_mail = $("<a></a>").addClass("tooltip").attr("href", "mailto:flamendless8@gmail.com").appendTo(icons);
+	const a_mail = $("<a></a>").addClass("tooltip").attr("href", "mailto:flamendless8@gmail.com").attr("target", "_blank").appendTo(icons);
 	const i_mail = $("<i></i>").addClass("fa fa-envelope").appendTo(a_mail);
 	const span_mail = $("<span></span>").addClass("tooltip-text").text("Send me an E-Mail").appendTo(i_mail);
 }
