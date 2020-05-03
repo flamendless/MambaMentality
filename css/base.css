@@ -33,3 +33,25 @@ Gradients: https://uigradients.com/
 	margin: 0;
 	padding: 0;
 }
+
+@media screen and (max-width: 720px)
+{
+	#main
+	{
+		padding-top: 32px;
+		padding-bottom: 32px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+@media screen and (max-width: 640px)
+{
+	#main
+	{
+		padding-top: 32px;
+		padding-bottom: 32px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}

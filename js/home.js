@@ -95,12 +95,6 @@ videos.jumpshot = {
 		But as he developed within the league, he turned into a deadly shooter with most of his points coming from the
 		perimeter. Kobe is famous for making difficult and game winning shots. He is so versatile and deadly that his
 		defenders find it very hard to guard him.`,
-	links: [
-		{
-			link: "#jumpshot",
-			text: "Click here to learn more",
-		},
-	]
 };
 
 videos.fadeaway = {
@@ -127,12 +121,6 @@ videos.dunk = {
 		most amazing and eye-catching highlight reel in any basketball match. This is no exception when it comes to Kobe Bryant,
 		his dunk has left viewers gasping for air as he fearlessly leaps and dunks in every game. The motion, artistic quality, and
 		finesse he displays is a must watch for every basketball fans out there.`,
-	links: [
-		{
-			link: "./webpages/dunk.html",
-			text: "Click here to learn more",
-		},
-	]
 };
 
 videos.layup = {
@@ -143,12 +131,6 @@ videos.layup = {
 		It is not as amazing as a dunk but players have found different ways to make it amazing and even harder to guard and block.
 		One of the many players who excel at making difficult and acrobatic layup to stun the defenders and to entertain the crowd is
 		Kobe Bryant, his layup is unpredictable and his reverse layup is smooth and precise.`,
-	links: [
-		{
-			link: "./webpages/layup.html",
-			text: "Click here to learn more",
-		},
-	]
 };
 
 videos.defense = {
@@ -160,12 +142,6 @@ videos.defense = {
 		player. Kobe Bryant is well-known also for his tight and unrelentless defense. After all, one of the most noticable personality of him
 		is his competitiveness and hatred of losing. That is why when he defends, he pours as much energy into guarding his opponent as much as
 		he is trying to score in offense.`,
-	links: [
-		{
-			link: "./webpages/defense.html",
-			text: "Click here to learn more",
-		},
-	]
 };
 
 function generate_modal(id, alt)

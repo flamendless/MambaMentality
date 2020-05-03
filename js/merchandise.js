@@ -48,6 +48,14 @@ const merch_items = [
 	},
 
 	{
+		name: "NBA 2K17",
+		img: "2k17.jpg",
+		buy: true,
+		link: "https://store.steampowered.com/app/385760/NBA_2K17/",
+		description: "NBA 2K17 cover shows Kobe Bryant as a tribute to his legacy."
+	},
+
+	{
 		name: "Official NBA Jersey",
 		buy: true,
 		img: "jersey.jpg",

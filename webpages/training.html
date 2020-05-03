@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Quiz - Mamba Mentality</title>
+	<title>Training - Mamba Mentality</title>
 
 	<script src="../includes/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../includes/navigo.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" type="text/css" href="../includes/fontawesome-free-5.11.2-web/css/all.min.css">
 
-	<link rel="stylesheet" type="text/css" href="../css/quiz.css">
+	<link rel="stylesheet" type="text/css" href="../css/training.css">
 	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
@@ -26,7 +26,7 @@
 	<script src="../js/globals.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/routes.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/navbar.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../js/quiz.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/training.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../js/footer.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
@@ -39,44 +39,92 @@
 	<div id="main" class="content">
 		<div class="container">
 			<div class="title">
-				<h1>THE MAMBA MENTALITY QUIZ</h1>
+				<h1>
+					TRAINING
+				</h1>
 				<hr>
-				<h4 class="direction">
-					<b>Direction:</b>
-					Choose and click your desired answer for every question.
-					Then click the Submit button at the bottom of the page to validate
-					your answer and get the result.
-				</h4>
-				<h4 class="note">
-					<b>Note:</b>
-					No personal information about you will be collected.
-					We treasure your privacy.
-				</h4>
-				<hr class="bottom-hr" style="width: 25%; margin-bottom: 16px;">
 			</div>
 
-			<div id="quiz_score" class="hidden">
-				<h1>YOUR SCORE IS:</h1>
-				<!-- This is to be dynamicaly generated inside quiz.js -->
-				<!-- <h2 class="score&#45;text"></h2> -->
-				<!-- <div class="stars"></div> -->
+			<div class="row">
+				<div class="left">
+					<a href="https://mambasportsacademy.com/">
+						<h1>
+							Train with the Mamba
+						</h1>
+						<h4>
+							Take a look at the Mamba Academy
+						</h4>
+					</a>
+				</div>
 			</div>
 
-			<div id="quiz">
-				<!-- Quiz -->
-				<!-- Template is quiz_content.html -->
-				<!-- But it will be dynamically generated in quiz.js -->
+			<div class="row">
+				<div class="right">
+					<a id="tedx" href="#">
+						<h1>
+							Listen to his story
+						</h1>
+						<h4>
+							Watch a TedX talk interviewing the Mamba
+						</h4>
+					</a>
+				</div>
 			</div>
 
-			<div class="content-break"></div>
-			<button id="submit" class="button">
-				<i class="fa fa-check"></i>
-				SUBMIT
-			</button>
-			<button id="retake" class="button hidden">
-				<i class="fa fa-redo"></i>
-				RETAKE
-			</button>
+			<div class="row">
+				<div class="left">
+					<a href="#workout">
+						<h1>
+							Try the Mamba Workout
+						</h1>
+						<h4>
+							2 Hours Running +
+							2 Hours Basketball +
+							2 Hours Weightlifting =
+							6 Hours A Day x
+							6 Times A Week for
+							6 Times A Month
+						</h4>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="right">
+					<a href="#fadeaway">
+						<h1>
+							Learn the Fadeaway
+						</h1>
+						<h4>
+							Read the guide to developing your fadeaway
+						</h4>
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="left">
+					<a href="#principles">
+						<h1>
+							3 Crucial Principles
+						</h1>
+						<h4>
+							Every mentality has its principles.
+						</h4>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="main_modal" class="modal">
+		<div class="modal_container">
+			<span id="modal_close">&times;</span>
+			<video id="modal_video" class="modal-content" controls poster="../assets/video/thumbnail.png">
+				<source id="modal_video_src" type="video/mp4">
+			</video>
+			<div id="modal_caption"></div>
 		</div>
 	</div>
 
