@@ -1,0 +1,29 @@
+$(document).ready(
+function()
+{
+	$(".row")
+		.on("mouseenter",
+			function()
+			{
+				$(this).find(".banner-info").slideDown();
+			})
+		.on("mouseleave",
+			function()
+			{
+				$(this).find(".banner-info").slideUp();
+			});
+
+	$(".row-sched")
+		.on("mouseenter",
+			function()
+			{
+				$(this).find(".banner-left").slideDown();
+				$(this).find(".banner-right").slideDown();
+			})
+		.on("mouseleave",
+			function()
+			{
+				$(this).find(".banner-left").slideUp();
+				$(this).find(".banner-right").slideUp();
+			});
+})

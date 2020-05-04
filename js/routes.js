@@ -49,5 +49,9 @@ function()
 			{
 				location.replace(webpages + "fadeaway.html");
 			})
+		.on("workout", function()
+			{
+				location.replace(webpages = "workout.html");
+			})
 		.resolve();
 })

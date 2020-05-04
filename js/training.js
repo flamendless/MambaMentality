@@ -18,7 +18,7 @@ function()
 	tedx.click(
 		function()
 		{
-			vid_src.attr("src", "../assets/video/fadeaway.mp4");
+			vid_src.attr("src", "../assets/video/tedx.mp4");
 			vid[0].load();
 			caption.text("TedX Talk With Kobe Bryant");
 			modal.fadeIn(250);
@@ -29,4 +29,16 @@ function()
 		{
 			modal.fadeOut(250);
 		});
+
+	$(".container .row a")
+		.on("mouseenter",
+			function()
+			{
+				$(this).find("h4").slideDown();
+			})
+		.on("mouseleave",
+			function()
+			{
+				$(this).find("h4").slideUp();
+			});
 })

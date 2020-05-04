@@ -1,0 +1,241 @@
+@import url("base.css");
+@import url("tooltip.css");
+
+body, html
+{
+	height: 100%;
+	background-color: #2a2438;
+	background-image: url("../assets/training/bg.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+body { overflow-x: hidden; }
+
+#main
+{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 128px;
+	padding-right: 128px;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 8px;
+	border-radius: 16px;
+	background: linear-gradient(to bottom, #C0C0C0, #DCDCDC, #696969);
+	box-shadow: 0px 0px 16px 16px var(--palette-lal-purple);
+}
+
+.container .title
+{
+	flex-basis: 100%;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.container .title h1
+{
+	text-align: center;
+	font-family: "KenyanCoffeeBold";
+	font-weight: normal;
+	font-size: 48px;
+	color: var(--palette-lal-black);
+}
+
+.container .title h4
+{
+	text-align: center;
+	font-family: "KenyanCoffee";
+	font-weight: normal;
+	font-size: 24px;
+	color: var(--palette-lal-black);
+}
+
+.container .title hr
+{
+	width: 50%;
+	border: 2px solid var(--palette-lal-purple);
+	margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.container .banner
+{
+	display: flex;
+	flex-direction: row;
+	flex-basis: 100%;
+}
+
+.container .banner .row
+{
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: 16px;
+	height: 512px;
+}
+
+#track,
+#bball,
+#weight
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#track
+{
+	background-image: url("../assets/training/track.png");
+}
+
+#bball
+{
+	background-image: url("../assets/training/bball.png");
+}
+
+#weight
+{
+	background-image: url("../assets/training/weight.png");
+}
+
+.banner-text h1
+{
+	font-family: "KenyanCoffeeBold";
+	font-size: 36px;
+	color: var(--palette-lal-yellow);
+	text-align: center;
+	text-decoration: underline;
+	background-color: var(--palette-lal-white);
+}
+
+.banner-info
+{
+	display: none;
+}
+
+.banner-info h4
+{
+	font-family: "Timeless";
+	font-size: 18px;
+	color: var(--palette-lal-yellow);
+	text-align: center;
+	background-color: var(--palette-lal-white);
+	padding: 16px;
+}
+
+.container .banner .row-sched
+{
+	display: flex;
+	flex-basis: 100%;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: 16px;
+	height: 360px;
+}
+
+.banner-schedule
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.banner-schedule .banner-left,
+.banner-schedule .banner-right
+{
+	flex-basis: 100%;
+	display: none;
+}
+
+.banner-schedule .banner-left
+{
+	align-self: flex-start;
+}
+
+.banner-schedule .banner-right
+{
+	align-self: flex-end;
+}
+
+.banner-schedule ul
+{
+	margin-left: 8px;
+	margin-right: 8px;
+	list-style: none;
+	background-color: var(--palette-lal-white);
+}
+
+.banner-schedule ul li
+{
+	color: var(--palette-lal-yellow);
+	font-family: "TimelessBold";
+	font-size: 16px;
+	text-align: center;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+#monday,
+#tuesday,
+#wednesday,
+#thursday,
+#friday,
+#saturday
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#monday
+{
+	background-image: url("../assets/training/monday.png");
+}
+#tuesday
+{
+	background-image: url("../assets/training/tuesday.png");
+}
+#wednesday
+{
+	background-image: url("../assets/training/wednesday.png");
+}
+#thursday
+{
+	background-image: url("../assets/training/thursday.png");
+}
+#friday
+{
+	background-image: url("../assets/training/friday.png");
+}
+#saturday
+{
+	background-image: url("../assets/training/saturday.png");
+}
+
+@media screen and (max-width: 720px)
+{
+	.container .banner
+	{
+		flex-direction: column;
+		height: 720px;
+	}
+}

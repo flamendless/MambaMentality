@@ -83,7 +83,7 @@ body { overflow-x: hidden; }
 
 .container .row a:hover h4
 {
-	visibility: visible;
+	/* visibility: visible; */
 }
 
 .container .row a:hover h1,
@@ -134,7 +134,8 @@ body { overflow-x: hidden; }
 
 .container .row h4
 {
-	visibility: hidden;
+	display: none;
+	/* visibility: hidden; */
 	font-size: 24px;
 }
 
