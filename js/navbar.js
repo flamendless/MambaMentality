@@ -5,7 +5,7 @@ function()
 	const filename = url.match(/.*\/(.*)$/)[1];
 	create_navbar();
 
-	if (filename == "index.html" || filename == "")
+	// if (filename == "index.html" || filename == "")
 		setup_sticky();
 });
 
@@ -72,7 +72,8 @@ function setup_sticky()
 		}
 		else
 		{
-			navbar.fadeOut(duration_fade);
+			if ($("#banner_image").length > 0)
+				navbar.fadeOut(duration_fade);
 			navbar.removeClass("sticky");
 		}
 	}
