@@ -59,20 +59,9 @@ body { overflow-x: hidden; }
 .container .title h4
 {
 	text-align: center;
-	font-family: "Timeless";
+	font-family: "PhotographSignature";
 	font-weight: normal;
-	font-size: 18px;
-	color: var(--palette-lal-black);
-	margin-top: 16px;
-	margin-bottom: 16px;
-}
-
-.container h2
-{
-	flex-basis: 100%;
-	text-align: center;
-	font-family: "KenyanCoffeeBold";
-	font-size: 32px;
+	font-size: 54px;
 	color: var(--palette-lal-black);
 	margin-top: 16px;
 	margin-bottom: 16px;
@@ -80,48 +69,44 @@ body { overflow-x: hidden; }
 
 .container .row
 {
-	flex-basis: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	box-shadow: 0px 0px 16px 8px var(--palette-lal-purple);
-	background-image: url("../assets/training/bg_card.png");
+	margin-top: 16px;
+	border-radius: 16px;
+	margin-bottom: 16px;
+	flex-basis: 100%;
+	cursor: pointer;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .container .row .row-title
 {
-	background-color: var(--palette-lal-white);
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
+	font-family: "KenyanCoffeeBold";
+	font-weight: normal;
+	font-size: 36px;
+	color: var(--palette-lal-white);
+	text-shadow: 0px 0px 16px var(--palette-lal-black);
+	padding: 16px;
+	transition: 0.5s ease;
 }
 
-.container .row .card
+.container .row:hover .row-title
 {
-	display: flex;
+	color: var(--palette-lal-yellow);
+	text-decoration: underline;
 }
 
-.container .row .card img
-{
-	width: auto;
-	height: 100%;
-}
-
-.container .row .card .caption
+.container .row .row-desc
 {
 	display: none;
 	font-family: "TimelessBold";
-	font-size: 24px;
-	padding: 32px;
-	color: var(--palette-lal-purple);
-	background-color: var(--palette-lal-yellow);
-}
-
-@media only screen and (max-width: 720px)
-{
-	.card
-	{
-		flex-direction: column;
-	}
+	font-weight: normal;
+	font-size: 18px;
+	color: var(--palette-lal-white);
+	text-shadow: 0px 0px 16px var(--palette-lal-black);
+	padding: 16px;
 }

@@ -53,5 +53,9 @@ function()
 			{
 				location.replace(webpages = "workout.html");
 			})
+		.on("principles", function()
+			{
+				location.replace(webpages + "principles.html");
+			})
 		.resolve();
 })
