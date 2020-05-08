@@ -15,31 +15,31 @@ function generate_mosaic()
 {
 	const jumpshot = {
 		id: "jumpshot",
-		img: "assets/jumpshot.png",
+		img: "../assets/jumpshot.png",
 		alt: "Kobe on a jumpshot",
 		text: "The jumpshot",
 	};
 	const fadeaway = {
 		id: "fadeaway",
-		img: "assets/fadeaway.png",
+		img: "../assets/fadeaway.png",
 		alt: "Kobe on a fadeaway",
 		text: "The fadeaway",
 	};
 	const dunk = {
 		id: "dunk",
-		img: "assets/dunk.png",
+		img: "../assets/dunk.png",
 		alt: "Kobe on a dunk",
 		text: "The dunk",
 	};
 	const layup = {
 		id: "layup",
-		img: "assets/layup.png",
+		img: "../assets/layup.png",
 		alt: "Kobe on a layup",
 		text: "The layup",
 	};
 	const defense = {
 		id: "defense",
-		img: "assets/defense.png",
+		img: "../assets/defense.png",
 		alt: "Kobe on a defense",
 		text: "The defense",
 	};
@@ -89,7 +89,7 @@ function generate_mosaic()
 
 const videos = {};
 videos.jumpshot = {
-	src: "assets/video/jumpshot.mp4",
+	src: "../assets/video/jumpshot.mp4",
 	info_head: "Jumpshot",
 	content: `In his early years, Kobe was known for scoring with highlight dunks using his athleticism inside the rim.
 		But as he developed within the league, he turned into a deadly shooter with most of his points coming from the
@@ -98,7 +98,7 @@ videos.jumpshot = {
 };
 
 videos.fadeaway = {
-	src: "assets/video/fadeaway.mp4",
+	src: "../assets/video/fadeaway.mp4",
 	info_head: "Fadeaway",
 	content: `One of Kobe's offensive arsenal is the fadeaway shot. Fadeaway shot is not an easy move to pull off.
 		After all, it seems odd to shoot while inching away from the basket instead of going nearer.
@@ -115,7 +115,7 @@ videos.fadeaway = {
 };
 
 videos.dunk = {
-	src: "assets/video/dunk.mp4",
+	src: "../assets/video/dunk.mp4",
 	info_head: "Dunk",
 	content: `From the gravity-defying leap into the air to the power and intensity of the slam has always been one of the
 		most amazing and eye-catching highlight reel in any basketball match. This is no exception when it comes to Kobe Bryant,
@@ -124,7 +124,7 @@ videos.dunk = {
 };
 
 videos.layup = {
-	src: "assets/video/layup.mp4",
+	src: "../assets/video/layup.mp4",
 	info_head: "Layup",
 	content: `One of the fundamental moves in basketball is the layup. It is very basic that anyone who plays this sport knows it and
 		have done it multiple times. It is the easiest way to perform, it is even easier to score a point with layup than to shoot.
@@ -134,7 +134,7 @@ videos.layup = {
 };
 
 videos.defense = {
-	src: "assets/video/defense.mp4",
+	src: "../assets/video/defense.mp4",
 	info_head: "Defense",
 	content: `Defense is not that highly praised compared to the other end of the spectrum of strategy in basketball, which is offense.
 		Defense is shy from spotlight and highlight reel but is indeed very essential skill that every player must practice and perform.
@@ -157,7 +157,7 @@ function generate_modal(id, alt)
 	const info_links = $("#modal_info .info-links");
 
 	const random = get_random_bg();
-	const random_bg = `./assets/art${random}.png`;
+	const random_bg = `../assets/art${random}.png`;
 	modal.css("background-image", `url(${random_bg})`);
 
 	const vids = videos[id];
