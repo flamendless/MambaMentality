@@ -15,6 +15,7 @@ function()
 		root = "../";
 		webpages = "./";
 	}
+	console.log(f, root, webpages)
 
 	const use_hash = true;
 	const hash = "#!";
