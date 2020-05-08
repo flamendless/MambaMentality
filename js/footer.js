@@ -6,7 +6,8 @@ function()
 
 function create_footer()
 {
-	const src_logo = determine_path("assets/logo.png");
+	// const src_logo = determine_path("assets/logo.png");
+	const src_logo = "../assets/logo.png";
 
 	const main = $("#footer");
 	const footer = $("<footer></footer>").addClass("footer").appendTo(main);
