@@ -11,7 +11,7 @@ function()
 
 function create_navbar()
 {
-	const src_logo = determine_path("assets/logo.svg");
+	const src_logo = determine_path("assets/logo.png");
 	const main = $("#navbar");
 	const navbar = $("<div></div>").addClass("navbar").appendTo(main);
 	const ul = $("<ul role='navigation'></ul>").addClass("navbar-main").appendTo(navbar);
