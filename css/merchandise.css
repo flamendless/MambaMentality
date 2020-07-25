@@ -204,3 +204,24 @@ body { overflow-x: hidden; }
 		flex-basis: 100%;
 	}
 }
+
+@media screen and (min-width: 400px)
+{
+	.container .merch
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.container .merch .merch-item
+	{
+		display: flex;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		margin: 8px;
+		box-shadow: -8px 8px 32px var(--palette-lal-purple);
+		background-color: white;
+		border-radius: 16px;
+	}
+}

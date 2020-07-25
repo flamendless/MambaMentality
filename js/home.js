@@ -180,7 +180,12 @@ function generate_modal(id, alt)
 		}
 	}
 
-	modal.fadeIn(250);
+	modal.fadeIn(250,
+		function()
+		{
+			$(this).css("display", "flex");
+		});
+
 	caption.text(alt);
 	span.click(
 		function()
